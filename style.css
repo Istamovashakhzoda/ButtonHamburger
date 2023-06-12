@@ -13,28 +13,60 @@ body{
     height: 89vh;
     background-repeat: no-repeat;
 }
+ header{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+ }
 
 .main{
     width: 90%;
     margin: 0 auto;
+    transform: translateX(-500px);
+    transition: 0.5S;
+}
+
+.container{
+    /* background-color: cadetblue; */
+    margin-right: 0;
+    height: 25px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menulogo{
+    height: 3px;
+    width: 30px;
+    background-color: snow;
 }
 
 .header ul{
  text-decoration: none;
- display: flex;
- justify-content: space-between;
- padding-top: 40px;
 }
 
 .header a{
     list-style: none;
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header li{
-    list-style: none;
+    text-align: center;
+    list-style-type: none;
+    border-bottom: 1px solid rgb(130,117,218);
+    padding: 20px 0;
     font-size: 27px;
     font-family: sans-serif;
+    transition: font-weight 0.2s;
+}
+
+.header li:last-child{
+    border-bottom: none;
 }
 
 .header a:hover{
